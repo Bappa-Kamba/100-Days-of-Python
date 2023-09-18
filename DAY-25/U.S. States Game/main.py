@@ -25,8 +25,8 @@ states = data.state.to_list()
 
 while len(guessed_states) < 50:
     answer_state = screen.textinput(f"{len(guessed_states)}/50 correct states",
-                                    "What is another state?").title()
-    if answer_state == "Exit":
+                                    "What is another state?")
+    if answer_state.title() == "Exit":
         missed_states = [state for state in states if state not in guessed_states]
         new_data = pandas.DataFrame(missed_states)
         new_data.to_csv(export_filename)
