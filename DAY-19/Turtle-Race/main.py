@@ -1,5 +1,6 @@
 from turtle import Turtle, Screen
 from random import randint
+from time import sleep
 
 screen = Screen()
 screen.setup(width=800, height=600)

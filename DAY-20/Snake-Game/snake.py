@@ -32,8 +32,6 @@ class Snake:
         snake_segment.goto(pos)
         self.snake_body.append(snake_segment)
         
-        
-
 
     def move_snake(self):
         snake = self.snake_body
